@@ -1,0 +1,22 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>    
+</head>
+<body>
+    <div>
+        <h2>Enter an integer value that more than 0 and does not exceed 999999</h2>
+        @using (Html.BeginForm("Convert", "Home"))
+        {
+            @Html.TextBox("value")
+            <input type="submit" value="Convert" />
+        }
+    </div>
+</body>
+</html>
